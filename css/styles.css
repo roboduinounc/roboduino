@@ -228,3 +228,59 @@ img {
 		width: 1;
 	}
 }
+
+/* Responsive */
+
+@media screen and (max-width: 550px) {
+	.container .headline {
+		padding: 1rem;
+	}
+
+	.container .headline .title h1 {
+		font-size: 4rem;
+		line-height: 3rem;
+	}
+	.container .headline .title h4 {
+		font-size: 2rem;
+	}
+
+	.button {
+		font-size: 1rem;
+		padding: 0.8rem 1.5rem;
+	}
+
+	.container .section {
+		padding: 1rem;
+		height: auto;
+	}
+
+	.container .section h2.title {
+		font-size: 2rem;
+		margin: 1.5rem 0;
+	}
+
+	.container .section p.description {
+		max-width: 100%;
+		margin: 0;
+		text-align: justify;
+	}
+
+	.container .section .team {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.section .project {
+		flex-direction: column;
+	}
+
+	.section.dark .project .info {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		align-items: center;
+	}
+
+	.section.dark .project .info .description {
+		text-align: justify;
+	}
+}
