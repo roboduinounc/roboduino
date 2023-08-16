@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lalezar&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 400;
+	color: #000;
+}
+
+a,
+button {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	overflow: hidden;
+}
+
+.container .headline {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-color: #232931;
+}
+
+.container .headline .title {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.container .headline .title h1 {
+	line-height: 5rem;
+	font-size: 8rem;
+	text-transform: uppercase;
+	font-family: 'Lalezar', cursive;
+	color: #ffffff;
+	margin: 0;
+	margin-top: 2rem;
+}
+
+.container .headline .title h4 {
+	text-align: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+
+	margin: 0;
+	font-family: 'Lalezar', cursive;
+}
+
+.primary {
+	color: #ff2121;
+}
+
+.gray {
+	color: #d4d4d4;
+}
+
+.animAp {
+	animation: showAll 2s;
+}
+
+.animMa {
+	width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 2s 1s normal both;
+}
+
+.button {
+	display: inline-block;
+	font-family: 'Lalezar', cursive;
+	font-size: 1.45rem;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1.3rem 2.1rem 1rem;
+	border-radius: 10rem;
+	margin: 0 0.5rem;
+	-webkit-box-shadow: inset 0 0 0 0.25rem #fff;
+	box-shadow: inset 0 0 0 0.25rem #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	animation: showAll 1s 2s normal both;
+}
+
+.button:hover,
+.button:focus {
+	color: #000;
+	-webkit-box-shadow: inset 0 0 0 3.25rem #fff;
+	box-shadow: inset 0 0 0 3.25rem #fff;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+	color: #fff;
+	-webkit-box-shadow: inset 0 0 0 3.25rem #ff5047;
+	box-shadow: inset 0 0 0 3.25rem #ff5047;
+}
+
+.button.primary {
+	color: #fff;
+	-webkit-box-shadow: inset 0 0 0 0.28rem #ff5047;
+	box-shadow: inset 0 0 0 0.28rem #ff5047;
+}
+
+.container .section {
+	padding: 2rem;
+	height: 100vh;
+}
+
+.container .section h2.title {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.container .section p.description {
+	text-align: center;
+	font-size: 1rem;
+	max-width: 75%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.container .section .team {
+	padding: 3rem 1rem;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
+}
+
+.container .section .team .member {
+	position: relative;
+	text-align: center;
+}
+
+.container .section .team .member .image {
+	border-radius: 50%;
+}
+
+.container .section .team .member .image img {
+	filter: drop-shadow(2px 4px 6px black);
+	border-radius: 50%;
+	padding: 0.5rem;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+
+.container .section .team .member .name {
+	font-family: 'Lalezar', cursive;
+	font-size: 1.45rem;
+	text-transform: uppercase;
+}
+
+.section.dark {
+	background-color: #232931;
+	color: #fff;
+}
+
+.section.dark h2.title {
+	font-family: 'Lalezar', cursive;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.section.dark .project {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.section.dark .project .info {
+	max-width: 50%;
+}
+
+.section.dark .project .content {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.section.dark .project .title {
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+}
+.section.dark .project .subtitle {
+	font-size: 1.5rem;
+	opacity: 0.6;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.section.dark .project .image {
+	max-width: 350px;
+}
+
+/* Animaciones */
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes showAll {
+	from {
+		opacity: 0;
+	}
+	opacity {
+		width: 1;
+	}
+}
